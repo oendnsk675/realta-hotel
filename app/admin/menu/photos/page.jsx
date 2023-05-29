@@ -42,13 +42,13 @@ const page = () => {
         <div className="flex gap-2 mt-5">
           <Link
             className="px-5 py-1 text-sm bg-indigo-500 rounded-md text-white"
-            href={"/dashboard"}
+            href={"/admin"}
           >
             Cancel
           </Link>
           <Link
             className="px-5 py-1 text-sm bg-primary-orange rounded-md text-white"
-            href={"/dashboard"}
+            href={"/admin"}
           >
             Save
           </Link>
