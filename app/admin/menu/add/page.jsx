@@ -8,6 +8,7 @@ const page = () => {
   const [menu, setMenu] = useState({
     remeName: "",
     remePrice: "",
+    remeDescription: "",
     remeStatus: "NOT-AVAILABLE",
   });
 
@@ -65,12 +66,38 @@ const page = () => {
         </div>
         <div className="flex items-center">
           <label htmlFor="name" className="mr-3 w-24">
-            remePrice
+            Description
+          </label>
+          <input
+            value={menu.remeDescription}
+            onChange={(e) =>
+              setMenu({ ...menu, remeDescription: e.target.value })
+            }
+            type="text"
+            className="rounded-md w-80 p-1 px-2 border"
+            placeholder="Type here"
+          />
+        </div>
+        <div className="flex items-center">
+          <label htmlFor="name" className="mr-3 w-24">
+            Type
+          </label>
+          <input
+            value={menu.remeType}
+            onChange={(e) => setMenu({ ...menu, remeType: e.target.value })}
+            type="text"
+            className="rounded-md w-80 p-1 px-2 border"
+            placeholder="Type here"
+          />
+        </div>
+        <div className="flex items-center">
+          <label htmlFor="name" className="mr-3 w-24">
+            Price
           </label>
           <input
             value={menu.remePrice}
             onChange={(e) => setMenu({ ...menu, remePrice: e.target.value })}
-            type="text"
+            type="number"
             className="rounded-md w-80 p-1 px-2 border"
             placeholder="Type here"
           />

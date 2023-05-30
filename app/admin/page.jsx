@@ -121,7 +121,7 @@ const page = () => {
                 <td className="pt-4">{index + 1}</td>
                 <td className="pt-4">{m.remeName}</td>
                 <td className="pt-4">{m.remePrice}</td>
-                <td className="pt-4">Snack</td>
+                <td className="pt-4">{m.remeType}</td>
                 <td className="pt-4">{m.remeStatus}</td>
                 <td className="flex-center relative pt-4">
                   <button>

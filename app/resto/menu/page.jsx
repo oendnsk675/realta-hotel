@@ -191,8 +191,7 @@ const page = () => {
               <div className="w-full h-40 bg-black rounded object-cover"></div>
               <h1 className="text-xl font-bold mt-2">{data.remeName}</h1>
               <span className="text-xs text-opacity-30">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus, quae?
+                {data.remeDescription}
               </span>
               <span className="mt-4 p-0.5 px-2 text-xs block w-fit rounded-full bg-blue-100">
                 {data.remeStatus}

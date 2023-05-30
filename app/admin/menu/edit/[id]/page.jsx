@@ -89,6 +89,32 @@ const page = ({ params }) => {
         </div>
         <div className="flex items-center">
           <label htmlFor="name" className="mr-3 w-24">
+            Description
+          </label>
+          <input
+            value={menu.remeDescription}
+            onChange={(e) =>
+              setMenu({ ...menu, remeDescription: e.target.value })
+            }
+            type="text"
+            className="rounded-md w-80 p-1 px-2 border"
+            placeholder="Type here"
+          />
+        </div>
+        <div className="flex items-center">
+          <label htmlFor="name" className="mr-3 w-24">
+            Type
+          </label>
+          <input
+            value={menu.remeType}
+            onChange={(e) => setMenu({ ...menu, remeType: e.target.value })}
+            type="text"
+            className="rounded-md w-80 p-1 px-2 border"
+            placeholder="Type here"
+          />
+        </div>
+        <div className="flex items-center">
+          <label htmlFor="name" className="mr-3 w-24">
             remePrice
           </label>
           <input
